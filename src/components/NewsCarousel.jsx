@@ -81,6 +81,7 @@ function NewsCarousel() {
                 src={card.src}
                 alt={card.title}
                 className="block w-full rounded-t-[10px]"
+                height={320}
               />
               <div className="py-4 pl-3 md:py-5">
                 <span className="mb-1 block text-[12px] text-[#7A7687]">
