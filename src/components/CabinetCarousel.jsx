@@ -82,6 +82,7 @@ function CabinetCarousel() {
                 alt={card.title}
                 className="block w-full h-full rounded-t-[10px]"
                 height={480}
+                effect="blur"
               />
               <div className="py-4 pl-3 md:py-5">
                 <h4 className="text-[16px]  font-semibold md:text-[18px]">
