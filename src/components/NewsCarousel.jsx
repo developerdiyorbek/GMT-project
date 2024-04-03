@@ -8,7 +8,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} absolute left-10 top-[480px] h-8 w-8 rounded-full bg-green-500 pt-2 text-center`}
+      className={`${className} absolute left-10 top-[490px] h-8 w-8 rounded-full bg-green-500 pt-2 text-center`}
       style={{ ...style }}
       onClick={onClick}
     />
@@ -19,7 +19,7 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} absolute left-0  top-[480px]  h-8 w-8 rounded-full bg-green-500 pt-2 text-center`}
+      className={`${className} absolute left-0  top-[490px]  h-8 w-8 rounded-full bg-green-500 pt-2 text-center`}
       style={{ ...style }}
       onClick={onClick}
     />
