@@ -4,12 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Category = () => {
-  const products = Products.map((item) => {
-    return {
-      ...item,
-      img: `https://picsum.photos/300?random=${Math.ceil(Math.random() * 24)}`,
-    };
-  });
+  const products = Products.slice(0, 8);
 
   return (
     <section className="mx-auto my-12 w-full max-w-[1300px] px-5 md:my-[100px]">
@@ -21,7 +16,7 @@ const Category = () => {
           Все категории
         </button>
       </div>
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4  gap-5">
         {products.map((product) => (
           <Link
             key={product.document_id}
@@ -31,11 +26,30 @@ const Category = () => {
             <LazyLoadImage
               src={product.img}
               alt={product.commercial_name}
-              className="w-full rounded-t-[10px]"
+              className="w-full h-full rounded-t-[10px]"
               height={300}
               effect="blur"
             />
-            <p>{product.commercial_name}</p>
+            <div className="p-4">
+              <h5
+                className="text-[#202020] text-[16px] font-semibold truncate mb-1"
+                title={product.commercial_name}
+              >
+                {product.commercial_name}
+              </h5>
+              <p className="text-[#7A7687] text-[12px] font-normal">
+                Артикул: {product.document_id}
+              </p>
+              <p className="text-[#7A7687] text-[12px] font-normal mb-3">
+                В наличии
+              </p>
+              <span className="block font-semibold text-[16px]">
+                {product.document_id.toLocaleString()} руб.
+              </span>
+            </div>
+            {/* <button className="mx-auto block border-[2px] border-[#D5D1E1] rounded-[50px] py-2 w-[90%] mb-2 text-[14px] text-[#088269] hover:bg-[#E1EFE6] hover:border-[#07745E] duration-200">
+              Добавить в корзину
+            </button> */}
           </Link>
         ))}
       </div>

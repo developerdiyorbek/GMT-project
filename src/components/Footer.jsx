@@ -139,10 +139,10 @@ const Footer = () => {
                 выходной
               </p>
               <div className="flex flex-col gap-[2px] text-[#F8F7F3]">
-                <Link to="/">+7 000-000-00-00</Link>
-                <Link to="/">+7 495-000-00-00</Link>
-                <Link to="/">8 800-000-00-00</Link>
-                <Link to="/">info@mail.ru</Link>
+                <Link to="#">+7 000-000-00-00</Link>
+                <Link to="#">+7 495-000-00-00</Link>
+                <Link to="#">8 800-000-00-00</Link>
+                <Link to="#">info@mail.ru</Link>
               </div>
             </div>
           </div>

@@ -25,7 +25,7 @@ import LoginModal from "./LoginModal";
 
 const Header = () => {
   // Login Modal
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleLoginModal = () => {
     setIsOpen((prev) => !prev);
@@ -52,7 +52,7 @@ const Header = () => {
           </div>
         </div>
         <div className="hidden h-[1px] w-full bg-[#E5E2EE] sm:block"></div>
-        <div className="header__bottom hidden py-[15px] md:block">
+        <div className="header__bottom hidden py-[15px]  md:block">
           <div className="mx-auto flex w-full max-w-[1300px] items-center justify-between px-5">
             <div className="flex items-center gap-5">
               <Link to="/" className="h-[30px] w-[73px]">
@@ -118,13 +118,13 @@ const Header = () => {
               </address>
               <Link
                 to="tel: +7(495)000-00-00"
-                className="hidden rounded-[50px] border-[1px] border-[#D5D1E1] px-5 py-[11px] text-[#202020] xl:block"
+                className="hidden rounded-[50px] border-[2px] border-[#D5D1E1] px-5 py-[11px] text-[#202020] xl:block hover:border-[#07745E] duration-150 focus:bg-[#E1EFE6] focus:text-[#07745E]"
               >
                 +7(495)000-00-00
               </Link>
               <Link
                 to="tel: +7(495)000-00-00"
-                className="rounded-full border-[1px] bg-[#088269] p-[9px] text-[#F8F7F3] lg:rounded-[50px] lg:px-5 lg:py-[11px]"
+                className="rounded-full border-[1px] bg-[#088269] p-[9px] text-[#F8F7F3] lg:rounded-[50px] lg:px-5 lg:py-[11px] hover:bg-[#066753] duration-150"
               >
                 <span className="hidden xl:block">Заказать звонок</span>
                 <span className="block xl:hidden">

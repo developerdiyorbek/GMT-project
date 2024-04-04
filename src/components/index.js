@@ -1,6 +1,7 @@
 import { AboutCompAccordion } from "./AboutCompAccordion";
 import AboutCompany from "./AboutCompany";
 import BrendsCarousel from "./BrandsCarousel";
+import BreadCrumbs from "./BreadCrumbs";
 import Brends from "./Brends";
 import Cabinet from "./Cabinet";
 import CabinetCarousel from "./CabinetCarousel";
@@ -8,7 +9,6 @@ import Category from "./Category";
 import Footer from "./Footer";
 import HamburgerModal from "./HamburgerModal";
 import Header from "./Header";
-import { Hero } from "./Hero";
 import LoginModal from "./LoginModal";
 import News from "./News";
 import NewsCarousel from "./NewsCarousel";
@@ -18,6 +18,7 @@ import Partners from "./Partners";
 import SearchComp from "./SearchComp";
 import SendQuestion from "./SendQuestion";
 import Subscribe from "./Subscribe";
+import Hero from "./Hero";
 
 export {
   Header,
@@ -40,4 +41,5 @@ export {
   NewsCarousel,
   Cabinet,
   CabinetCarousel,
+  BreadCrumbs,
 };

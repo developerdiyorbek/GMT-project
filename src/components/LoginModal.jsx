@@ -3,6 +3,7 @@ import { Dialog } from "@headlessui/react";
 import toast from "react-hot-toast";
 
 function LoginModal({ isOpen, setIsOpen }) {
+  console.log(isOpen);
   // save to local storage
   const handleSubmit = (e) => {
     e.preventDefault();

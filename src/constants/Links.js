@@ -2,7 +2,7 @@ export const Links = [
   {
     id: 1,
     title: "Каталог",
-    to: "/catalog",
+    to: "/Каталог",
   },
   {
     id: 2,
