@@ -99,9 +99,11 @@ const Korzina = () => {
                 width={200}
                 effect="blur"
               />
-              <div className="flex flex-col md:flex-row ml-5 mt-2 gap-6">
+              <div className="flex flex-col md:flex-row mx-5 mt-7 gap-6">
                 <div>
-                  <h4 className="font-medium">{product.mah}</h4>
+                  <h4 className="font-medium max-w-[200px] w-full truncate">
+                    {product.mah}
+                  </h4>
                   <p className="text-[#7A7687] text-[12px] md:text-[14px] mb-1">
                     Артикул: {product.document_id}
                   </p>

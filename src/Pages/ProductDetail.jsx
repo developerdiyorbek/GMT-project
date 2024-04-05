@@ -42,7 +42,7 @@ const ProductDetail = () => {
 
   return (
     <>
-      <section className="mx-auto my-10 max-w-[1300px] px-5">
+      <section className="mx-auto mt-10 max-w-[1300px] px-5">
         <BreadCrumbs />
         <div className="flex flex-col gap-[15px] sm:gap-5 md:gap-[60px] md:flex-row md:justify-between">
           <div className="w-full h-">
@@ -87,11 +87,11 @@ const ProductDetail = () => {
               Цена по запросу
             </p>
             <div className="flex items-center gap-4">
-              <button className="rounded-[50px] border-[2px] border-[#D5D1E1] px-5 py-2 text-[12px] font-semibold text-[#088269] sm:text-[14px] md:text-[16px] hover:border-[#07745E] duration-150 focus:bg-[#E1EFE6]">
+              <button className="rounded-[50px] border-[2px] border-[#D5D1E1] px-5 py-2 text-[12px] font-semibold text-[#088269] sm:text-[14px] xl:text-[16px] hover:border-[#07745E] duration-150 focus:bg-[#E1EFE6]">
                 Задать вопрос
               </button>
               <button
-                className="rounded-[50px] bg-[#088269] px-5 py-2 text-[12px] font-semibold text-[#F8F7F3] sm:text-[14px] md:text-[16px]"
+                className="rounded-[50px] bg-[#088269] px-5 py-2 text-[12px] font-semibold text-[#F8F7F3] sm:text-[14px] xl:text-[16px]"
                 onClick={() => product && handleAdd(product.document_id)}
               >
                 Добавить в корзину
