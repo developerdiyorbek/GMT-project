@@ -1,6 +1,9 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
+//icons
+import { MdKeyboardArrowRight } from "react-icons/md";
+
 const BreadCrumbs = () => {
   const location = useLocation();
 
@@ -17,7 +20,13 @@ const BreadCrumbs = () => {
       );
     });
 
-  return <div className="my-5 breadcrumbs text-black">{crumbs}</div>;
+  return (
+    <div className="my-5 breadcrumbs text-black flex items-center">
+      <Link to={"/"}>home</Link>
+      <span>{">"}</span>
+      {crumbs}
+    </div>
+  );
 };
 
 export default BreadCrumbs;

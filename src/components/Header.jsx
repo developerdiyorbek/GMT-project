@@ -55,7 +55,7 @@ const Header = () => {
         <div className="header__bottom hidden py-[15px]  md:block">
           <div className="mx-auto flex w-full max-w-[1300px] items-center justify-between px-5">
             <div className="flex items-center gap-5">
-              <Link to="/home" className="h-[30px] w-[73px]">
+              <Link to="/" className="h-[30px] w-[73px]">
                 <LazyLoadImage src={Logo} alt="Logo" />
               </Link>
               <SearchComp />

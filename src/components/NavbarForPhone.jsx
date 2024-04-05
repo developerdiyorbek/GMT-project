@@ -23,7 +23,7 @@ const navbarLinksPhone = [
       </>
     ),
     title: "Главная",
-    to: "/home",
+    to: "/",
   },
   {
     id: 2,

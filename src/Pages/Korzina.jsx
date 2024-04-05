@@ -10,7 +10,6 @@ import { IoMdAdd } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
 const Korzina = () => {
-  const [total, setTotal] = useState(0);
   const [products, setProducts] = useState([]);
 
   // get basket products
@@ -18,8 +17,6 @@ const Korzina = () => {
     const getProducts = JSON.parse(localStorage.getItem("products")) || [];
     setProducts(getProducts);
   }, []);
-
-  console.log(products);
 
   if (!products.length)
     return (
@@ -36,6 +33,53 @@ const Korzina = () => {
         </Link>
       </div>
     );
+
+  // total price
+  const total = products?.reduce((acc, item) => {
+    return acc + item.document_id * item.quantity;
+  }, 0);
+
+  // handle Increment
+  const handleIncrement = (id) => {
+    const updatedProduct = products.map((item) => {
+      if (item.document_id === id) {
+        return {
+          ...item,
+          quantity: item.quantity + 1,
+        };
+      }
+      return item;
+    });
+    localStorage.setItem("products", JSON.stringify(updatedProduct));
+    setProducts(updatedProduct);
+  };
+
+  // handle Decrement
+  const handleDecrement = (id) => {
+    const getProductById = products.find((item) => item.document_id === id);
+    if (getProductById.quantity === 1) {
+      handleRemove(getProductById.document_id);
+    } else {
+      const updatedProducts = products.map((item) => {
+        if (item.document_id === id) {
+          return {
+            ...item,
+            quantity: item.quantity - 1,
+          };
+        }
+        return item;
+      });
+      localStorage.setItem("products", JSON.stringify(updatedProducts));
+      setProducts(updatedProducts);
+    }
+  };
+
+  // remove Product
+  const handleRemove = (id) => {
+    const filterProduct = products.filter((item) => item.document_id !== id);
+    localStorage.setItem("products", JSON.stringify(filterProduct));
+    setProducts(filterProduct);
+  };
 
   return (
     <section className="max-w-[1300px]  mx-auto px-5">
@@ -70,19 +114,28 @@ const Korzina = () => {
                     {product.document_id.toLocaleString()} руб.
                   </p>
                   <div className="flex items-center justify-center gap-3 border-[2px] border-[#D5D1E1] rounded-[50px] max-w-[100px] w-full">
-                    <button className="text-[#7A7687]">
+                    <button
+                      className="text-[#7A7687]"
+                      onClick={() => handleDecrement(product.document_id)}
+                    >
                       <RiSubtractFill size={20} />
                     </button>
                     <p className="text-[#088269] font-semibold">
                       {product.quantity}
                     </p>
-                    <button className="text-[#07745E]">
+                    <button
+                      className="text-[#07745E]"
+                      onClick={() => handleIncrement(product.document_id)}
+                    >
                       <IoMdAdd size={20} />
                     </button>
                   </div>
                 </div>
               </div>
-              <button className="absolute top-1 right-2">
+              <button
+                className="absolute top-1 right-2"
+                onClick={() => handleRemove(product.document_id)}
+              >
                 <IoMdClose size={25} />
               </button>
             </div>

@@ -159,7 +159,7 @@ const Footer = () => {
         <div className="mb-4 hidden h-[1px] w-full bg-[#E5E2EE] md:block"></div>
         <div className="flex flex-col justify-between  gap-10 md:flex-row md:gap-0">
           <div className="hidden flex-col gap-[5px] md:flex">
-            <Link to="/home">
+            <Link to="/">
               <LazyLoadImage
                 src={LogoFooter}
                 alt="Logo"
@@ -172,13 +172,13 @@ const Footer = () => {
           <div>
             <h3 className="mb-[10px] text-[#F8F7F3]">Мы в соцсетях</h3>
             <div className="flex gap-2">
-              <Link to="/home">
+              <Link to="/">
                 <LazyLoadImage src={WikiSvg} width={24} height={24} />
               </Link>
-              <Link to="/home">
+              <Link to="/">
                 <LazyLoadImage src={TgSvg} width={24} height={24} />
               </Link>
-              <Link to="/home">
+              <Link to="/">
                 <LazyLoadImage src={WhatSappSvg} width={24} height={24} />
               </Link>
             </div>
