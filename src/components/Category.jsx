@@ -20,7 +20,7 @@ const Category = () => {
         {products.map((product) => (
           <Link
             key={product.document_id}
-            to={`/${product.document_id}`}
+            to={`${product.document_id}`}
             className="rounded-[10px] border-[1px] border-[#E5E2EE]"
           >
             <LazyLoadImage
@@ -47,9 +47,6 @@ const Category = () => {
                 {product.document_id.toLocaleString()} руб.
               </span>
             </div>
-            {/* <button className="mx-auto block border-[2px] border-[#D5D1E1] rounded-[50px] py-2 w-[90%] mb-2 text-[14px] text-[#088269] hover:bg-[#E1EFE6] hover:border-[#07745E] duration-200">
-              Добавить в корзину
-            </button> */}
           </Link>
         ))}
       </div>

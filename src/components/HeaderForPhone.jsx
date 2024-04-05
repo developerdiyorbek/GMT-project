@@ -20,7 +20,7 @@ const HeaderForPhone = () => {
     <>
       <div className="block px-4 py-3 md:hidden">
         <div className="mb-4 flex items-center justify-between">
-          <Link to="/">
+          <Link to="/home">
             <LazyLoadImage src={Logo} alt="Logo" width={74} height={32} />
           </Link>
           <div className="flex items-center gap-5">

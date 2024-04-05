@@ -35,7 +35,7 @@ const Header = () => {
     <>
       <header>
         <div className="header__top hidden py-[5px] text-[#7A7687] md:block">
-          <div className="px- mx-auto flex w-full max-w-[1300px] items-center justify-between px-5">
+          <div className="mx-auto flex w-full max-w-[1300px] items-center justify-between px-5">
             <div className="flex items-center gap-3 text-[10px] xl:text-[12px]">
               <p>О компании</p>
               <p>Доставка</p>
@@ -55,7 +55,7 @@ const Header = () => {
         <div className="header__bottom hidden py-[15px]  md:block">
           <div className="mx-auto flex w-full max-w-[1300px] items-center justify-between px-5">
             <div className="flex items-center gap-5">
-              <Link to="/" className="h-[30px] w-[73px]">
+              <Link to="/home" className="h-[30px] w-[73px]">
                 <LazyLoadImage src={Logo} alt="Logo" />
               </Link>
               <SearchComp />
@@ -72,21 +72,21 @@ const Header = () => {
                 <span className="mt-1 hidden lg:block">Войти</span>
               </button>
               <NavLink
-                to={"/favorite"}
+                to={"favorite"}
                 className="flex flex-col items-center text-[#7A7687] hover:text-[#07745e]"
               >
                 <FaHeart size={23} />
                 <span className="mt-1 hidden lg:block">Избранное</span>
               </NavLink>
               <NavLink
-                to={"/compare"}
+                to={"compare"}
                 className="flex flex-col items-center text-[#7A7687] hover:text-[#07745e]"
               >
                 <BsFillBarChartFill size={23} />
                 <span className="mt-1 hidden lg:block">Сравнить</span>
               </NavLink>
               <NavLink
-                to={"/korzina"}
+                to={"korzina"}
                 className="flex flex-col items-center text-[#7A7687] hover:text-[#07745e]"
               >
                 <BsCart2 size={23} />
@@ -98,7 +98,7 @@ const Header = () => {
         <div className="hidden h-[1px] w-full bg-[#E5E2EE] md:block"></div>
         <nav className="header__navbar hidden py-5 md:block">
           <div className="mx-auto flex w-full max-w-[1300px] items-center justify-between px-5">
-            <div className=" flex items-center gap-2 xl:gap-4">
+            <div className="flex items-center gap-2 xl:gap-4">
               {Links.map((link) => (
                 <Link
                   to={link?.to}

@@ -12,13 +12,15 @@ import Compare from "./Pages/Compare";
 
 import { Toaster } from "react-hot-toast";
 import ProductDetail from "./Pages/ProductDetail";
+import PageNotFound from "./Pages/PageNotFound";
 
 const App = () => {
   // router
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/home",
       element: <RootLayout />,
+      errorElement: <PageNotFound />,
       children: [
         {
           index: true,
@@ -29,19 +31,19 @@ const App = () => {
           element: <ProductDetail />,
         },
         {
-          path: "/catalog",
+          path: "catalog",
           element: <Catalog />,
         },
         {
-          path: "/korzina",
+          path: "korzina",
           element: <Korzina />,
         },
         {
-          path: "/favorite",
+          path: "favorite",
           element: <Favorite />,
         },
         {
-          path: "/compare",
+          path: "compare",
           element: <Compare />,
         },
       ],

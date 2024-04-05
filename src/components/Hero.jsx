@@ -53,7 +53,7 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
-              <LazyLoadImage src={heroImg} alt="heroImg" className="h-full" />
+              <img src={heroImg} alt="heroImg" className="h-full" />
             </div>
           </div>
         ))}

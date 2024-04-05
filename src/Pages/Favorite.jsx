@@ -1,7 +1,10 @@
+import { BreadCrumbs } from "../components";
+
 const Favorite = () => {
   return (
-    <section className="max-w-[1300px] my-24 mx-auto px-5">
-      <h3>Favorite</h3>
+    <section className="max-w-[1300px]  mx-auto px-5">
+      <BreadCrumbs />
+      <h3 className="mb-10">Favorite</h3>
     </section>
   );
 };

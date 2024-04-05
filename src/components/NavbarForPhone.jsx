@@ -23,25 +23,25 @@ const navbarLinksPhone = [
       </>
     ),
     title: "Главная",
-    to: "/",
+    to: "/home",
   },
   {
     id: 2,
     icon: <RiMenuSearchLine size={20} />,
     title: "Каталог",
-    to: "/catalog",
+    to: "catalog",
   },
   {
     id: 3,
     icon: <BsCart2 size={20} />,
     title: "Корзина",
-    to: "/korzina",
+    to: "korzina",
   },
   {
     id: 4,
     icon: <FaRegHeart size={20} />,
     title: "Избранное",
-    to: "/favorite",
+    to: "favorite",
   },
 ];
 
