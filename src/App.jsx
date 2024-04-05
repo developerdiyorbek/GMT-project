@@ -13,6 +13,7 @@ import Compare from "./Pages/Compare";
 import { Toaster } from "react-hot-toast";
 import ProductDetail from "./Pages/ProductDetail";
 import PageNotFound from "./Pages/PageNotFound";
+import CatalogLayout from "./Layout/CatalogLayout";
 
 const App = () => {
   // router
@@ -26,13 +27,20 @@ const App = () => {
           index: true,
           element: <Home />,
         },
-        {
-          path: ":id",
-          element: <ProductDetail />,
-        },
+
         {
           path: "catalog",
-          element: <Catalog />,
+          element: <CatalogLayout />,
+          children: [
+            {
+              index: true,
+              element: <Catalog />,
+            },
+            {
+              path: ":id",
+              element: <ProductDetail />,
+            },
+          ],
         },
         {
           path: "korzina",

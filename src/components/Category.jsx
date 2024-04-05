@@ -20,7 +20,7 @@ const Category = () => {
         {products.map((product) => (
           <Link
             key={product.document_id}
-            to={`${product.document_id}`}
+            to={`/home/catalog/${product.document_id}`}
             className="rounded-[10px] border-[1px] border-[#E5E2EE]"
           >
             <LazyLoadImage

@@ -39,7 +39,7 @@ const Catalog = () => {
           {currentPageData.map((product) => (
             <Link
               key={product.document_id}
-              to={`/home/${product.document_id}`}
+              to={`/home/catalog/${product.document_id}`}
               className="rounded-[10px] border-[1px] border-[#E5E2EE]"
             >
               <LazyLoadImage
