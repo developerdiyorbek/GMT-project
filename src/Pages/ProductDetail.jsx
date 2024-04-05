@@ -20,8 +20,6 @@ const ProductDetail = () => {
     const isExist = products.find((item) => item.document_id === id);
 
     if (isExist) {
-      console.log("salomlar");
-
       const updatedData = products.map((item) => {
         if (item.document_id == id) {
           return {
@@ -33,7 +31,6 @@ const ProductDetail = () => {
       });
       localStorage.setItem("products", JSON.stringify(updatedData));
     } else {
-      console.log("salom");
       const data = [...products, { ...product, quantity: 1 }];
       localStorage.setItem("products", JSON.stringify(data));
     }
