@@ -18,22 +18,6 @@ const Korzina = () => {
     setProducts(getProducts);
   }, []);
 
-  if (!products.length)
-    return (
-      <div className="flex flex-col items-center justify-center my-32">
-        <TbShoppingCartDiscount className="w-24 h-24 text-gray-400" />
-        <p className="mt-4 text-lg md:text-3xl text-[#088269]">
-          Your basket is empty
-        </p>
-        <Link
-          to="/home/catalog"
-          className="mt-4 text-lg bg-[#088269] rounded-[10px] text-white p-2"
-        >
-          Go to catalog
-        </Link>
-      </div>
-    );
-
   // total price
   const total = products?.reduce((acc, item) => {
     return acc + item.document_id * item.quantity;
@@ -80,6 +64,22 @@ const Korzina = () => {
     localStorage.setItem("products", JSON.stringify(filterProduct));
     setProducts(filterProduct);
   };
+
+  if (!products.length)
+    return (
+      <div className="flex flex-col items-center justify-center my-32">
+        <TbShoppingCartDiscount className="w-24 h-24 text-gray-400" />
+        <p className="mt-4 text-lg md:text-3xl text-[#088269]">
+          Your basket is empty
+        </p>
+        <Link
+          to="/catalog"
+          className="mt-4 text-lg bg-[#088269] rounded-[10px] text-white p-2"
+        >
+          Go to catalog
+        </Link>
+      </div>
+    );
 
   return (
     <section className="max-w-[1300px]  mx-auto px-5">
