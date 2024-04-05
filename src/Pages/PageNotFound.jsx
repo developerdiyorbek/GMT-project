@@ -8,7 +8,7 @@ const PageNotFound = () => {
         PageNotFound
       </h4>
       <Link
-        to={"/home"}
+        to={"/"}
         className="text-xl md:text-2xl  mt-3 bg-[#088269] p-2 md:p-4 rounded-[50px] text-white hover:opacity-75 duration-150"
       >
         Go to home
