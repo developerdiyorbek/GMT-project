@@ -24,45 +24,45 @@ const Footer = () => {
             <div className="mb-2 h-[1px] w-full bg-[#F8F7F3]"></div>
             <div className="flex gap-10">
               <ul className="flex flex-col gap-1 text-[#F8F7F3]">
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   О компании
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Сертификаты
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Вакансии
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Гарантии
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Услуги
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Акции
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Доставка
                 </li>
               </ul>
               <ul className="flex flex-col gap-1 text-[#F8F7F3]">
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Оплата
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Возврат
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   FAQ
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Лизинг
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Отзывы
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Блог
                 </li>
               </ul>
@@ -73,45 +73,45 @@ const Footer = () => {
             <div className="mb-2 h-[1px] w-full bg-[#F8F7F3]"></div>
             <div className="flex gap-10">
               <ul className="flex flex-col gap-1 text-[#F8F7F3]">
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Реанимация
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Хирургия
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Офтальмология
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Лабораторная диагностика
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Акушерство и Гинекология
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Гистология
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Косметология
                 </li>
               </ul>
               <ul className="flex flex-col gap-1 text-[#F8F7F3]">
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Орториноларингология
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Рентгенология и томография
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Стрерилизация
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Физиотерапия и реабилитация
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Функциональная диагностика
                 </li>
-                <li className="cursor-pointer duration-150 hover:text-[#07745E]">
+                <li className="cursor-pointer duration-150 hover:scale-105">
                   Эндоскопия
                 </li>
               </ul>

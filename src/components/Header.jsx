@@ -20,10 +20,17 @@ import SearchComp from "./SearchComp";
 
 import HeaderForPhone from "./HeaderForPhone";
 import NavbarForPhone from "./NavbarForPhone";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LoginModal from "./LoginModal";
 
 const Header = () => {
+  const [userData, setUserData] = useState(null);
+
+  useEffect(() => {
+    const data = localStorage.getItem("UserInformation");
+    setUserData(data);
+  }, [localStorage.getItem("UserInformation")]);
+
   // Login Modal
   const [isOpen, setIsOpen] = useState(false);
 
@@ -65,7 +72,9 @@ const Header = () => {
             </div>
             <div className="flex gap-4">
               <button
-                className="flex flex-col items-center text-[#7A7687] hover:text-[#07745e]"
+                className={`flex-col items-center text-[#7A7687] hover:text-[#07745e] ${
+                  userData ? "hidden" : "flex"
+                }`}
                 onClick={handleLoginModal}
               >
                 <FaRegUser size={23} />

@@ -11,7 +11,7 @@ import { FaRegUser } from "react-icons/fa";
 import LoginModal from "./LoginModal";
 
 // hooks
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // navbar array
 const navbarLinksPhone = [
@@ -46,6 +46,13 @@ const navbarLinksPhone = [
 ];
 
 const NavbarForPhone = () => {
+  const [userData, setUserData] = useState(null);
+
+  useEffect(() => {
+    const data = localStorage.getItem("UserInformation");
+    setUserData(data);
+  }, [localStorage.getItem("UserInformation")]);
+
   const [isOpenModal, setIsOpenModal] = useState(false);
   return (
     <>
@@ -64,7 +71,9 @@ const NavbarForPhone = () => {
             </NavLink>
           ))}
           <button
-            className="group flex flex-col items-center gap-1"
+            className={`group  flex-col items-center gap-1 ${
+              userData ? " hidden" : " flex"
+            }`}
             onClick={() => setIsOpenModal(true)}
           >
             <span className="group-hover:text-[#07745E]">
