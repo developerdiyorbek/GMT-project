@@ -10,6 +10,10 @@ import { IoMdAdd } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
 const Korzina = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [products, setProducts] = useState([]);
 
   // get basket products

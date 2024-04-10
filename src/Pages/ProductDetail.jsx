@@ -6,9 +6,14 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FaStar } from "react-icons/fa";
 
 import { toast } from "react-hot-toast";
+import { useEffect } from "react";
 
 const ProductDetail = () => {
   const { id } = useParams();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // get product by id
   const product = Products.find((item) => item.document_id == id);

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   AboutCompany,
   Brends,
@@ -12,6 +13,10 @@ import {
 } from "../components";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Hero />

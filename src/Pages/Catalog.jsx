@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   AboutCompany,
@@ -17,6 +17,11 @@ import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Catalog = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // pagination
   const [page, setPage] = useState(1);
   const itemsPerPage = 6;
